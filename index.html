@@ -6,6 +6,14 @@
         <title>Resto</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" type="text/css" rel="stylesheet">
+        
+            <script>
+              // Picture element HTML5 shiv
+              document.createElement( "picture" );
+            </script>
+            <script src="https://cdn.jsdelivr.net/gh/scottjehl/picturefill@3.0.2/dist/picturefill.js" async></script>
+          
+
     </head>
 
     <body>
@@ -32,6 +40,18 @@
         <div id="main-banner">
             <img src="images/banner.jpg" alt="Welcome to Resto">
         </div>
+
+        <!--
+        <div id="main-banner">
+            <picture>
+                <source srcset="images/banner.jpg" media="(max-width: 480px)">
+                <source srcset="images/banner.jpg" media="(max-width: 768px)">
+                <img srcset="images/banner.jpg" alt="pic">
+            </picture>
+        </div>
+
+        -->
+
         
         <div class="wrapper">
         <section id="home-menu">
