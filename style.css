@@ -181,3 +181,112 @@ footer a{
     text-decoration: none;
 }
 
+/* Media Queries */
+
+/* tablets */
+@media screen and (max-width: 768px){  /* 700px is a "breakpoint" - once the viewport hits 700px the styles below are applied  */
+
+    
+    #featured li{        
+        width: 48%; /* relative measurement - using 46% of the viewport percentage is considered a fluid layout - if using pixels it would be a fixed layout  */
+         
+    }
+
+    header nav{
+        float: none;
+        clear: left;
+        width: 100%;
+    }
+
+    header nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    h1.logo{
+        margin: 10px auto 0;
+        float: none;
+    }
+
+    header nav ul li{
+        margin: 10px 0;
+        width: 20%;
+        padding: 0;
+        text-align: center;
+    }
+
+    footer ul{
+        width: 48%;
+        text-align:  center;
+    }
+
+}
+
+/* mobile */
+@media screen and (max-width: 480px){ /* most mobile devices */ 
+
+    .burger-nav{
+        display:block;
+        height: 40px;
+        width: 100%;
+        background: url(images/burger.png) no-repeat 98% center;
+        background-color: #404040;
+        cursor: pointer;
+    }
+
+    header .wrapper{
+        width: 100%;
+        padding: 0;
+    }
+
+    header nav ul{
+        overflow: hidden;
+        background: #505050;
+        height: 0; 
+    }
+
+    header nav ul.open{
+        height: auto;
+    }
+
+    header nav ul li{
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+
+    header nav ul li a{
+        color: #fff;
+        padding: 10px;
+        border-bottom: 1px solid #404040;
+        display: block;
+        margin: 0;
+    }
+
+
+    #featured li{        
+        width: 90%;
+        margin: 20px 5%;        
+         
+    }
+
+    footer ul{
+        width: 48%;
+        text-align:  center;
+    }
+
+    #home-menu li{
+        float: none;
+        width: 96%;
+        margin: 30px 2% !important
+    }
+
+    #main-banner img{
+        width:180%;
+        position: relative;
+        left: -40%
+    }
+
+}
+
